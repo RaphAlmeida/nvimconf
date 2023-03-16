@@ -11,7 +11,7 @@ toggleterm.setup{
 }
 
 function _G.set_terminal_keymaps()
-  local opts = {noremap = true, timeout=1}
+  local opts = {noremap = true}
   vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], opts)
 
   vim.api.nvim_set_keymap('t', '<C-w>Left', [[<C-\><C-n><C-W>h]], opts)
