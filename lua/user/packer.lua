@@ -87,4 +87,7 @@ return require('packer').startup(function(use)
   -- GitSigns on the left of line number
   use 'lewis6991/gitsigns.nvim'
 
+  -- Toggleterm
+  use {"akinsho/toggleterm.nvim", tag = '*'}
+
 end)
