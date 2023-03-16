@@ -5,13 +5,13 @@ if not status_ok then
 end
 
 toggleterm.setup{
-  open_mapping = [[<leader>t]],
+  open_mapping = "<leader>t",
+  insert_mappings = false,
+  close_on_exit = true,
 }
 
--- keymap("n", "<C-Down>", ":resize -2<CR>", opts) 
-
 function _G.set_terminal_keymaps()
-  local opts = {noremap = true}
+  local opts = {noremap = true, timeout=1}
   vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], opts)
 
   vim.api.nvim_set_keymap('t', '<C-w>Left', [[<C-\><C-n><C-W>h]], opts)
