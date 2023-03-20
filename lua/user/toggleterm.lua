@@ -7,6 +7,7 @@ end
 toggleterm.setup{
   open_mapping = "<leader>t",
   insert_mappings = false,
+  terminal_mappings = false,
   close_on_exit = true,
 }
 
