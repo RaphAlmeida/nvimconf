@@ -53,6 +53,8 @@ nvim_tree.setup {
       custom_only = false,
       list = {
         { key = "v", cb = tree_cb "vsplit" },
+        { key = "l", cb = tree_cb "open_node" },
+        { key = "h", cb = tree_cb "close_node" },
       },
     },
   },
