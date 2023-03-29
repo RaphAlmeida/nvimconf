@@ -79,7 +79,8 @@ return require('packer').startup(function(use)
   }
 
   -- Vertical identation line
-  use "Yggdroot/indentLine"
+  --use "Yggdroot/indentLine"
+  use "lukas-reineke/indent-blankline.nvim"
 
   -- Go to last place where the cursor was
   use "ethanholz/nvim-lastplace"

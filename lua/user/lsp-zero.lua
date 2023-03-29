@@ -13,10 +13,16 @@ lsp.on_attach(function(_, bufnr)
   vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
   vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
   vim.keymap.set("n", "<leader>gl", function() vim.diagnostic.open_float() end, opts) -- Works also without leader
-  vim.keymap.set("n", "gf", function() vim.lsp.buf.code_action() end, {buffer = bufnr, remap = true})
 
-  --vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-  --vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+  -- Rename
+  vim.keymap.set("n", "<leader>rn", function () vim.lsp.buf.rename() end, opts)
+  -- Code action
+  vim.keymap.set("n", "<leader>ca", function () vim.lsp.buf.code_action() end , opts)
+  -- Telescope refs
+  vim.keymap.set("n", "<leader>gr", ":Telescope lsp_references<CR>", opts)
+  -- Telescope diagnostics
+  vim.keymap.set("n", "<leader>gd", ":Telescope diagnostics<CR>", opts)
+
 end)
 
 -- Fix Undefined global 'vim'
