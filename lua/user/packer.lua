@@ -6,8 +6,10 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorscheme
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'folke/tokyonight.nvim'
-  vim.cmd("colorscheme tokyonight-moon")
+  --vim.cmd("colorscheme tokyonight-moon")
+  vim.cmd("colorscheme catppuccin-macchiato")
 
   -- Telescope
   use {
@@ -93,5 +95,11 @@ return require('packer').startup(function(use)
 
   -- Comments
   use "numToStr/Comment.nvim"
+
+  -- Markdown preview
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
 
 end)
