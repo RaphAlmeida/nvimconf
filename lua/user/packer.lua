@@ -5,6 +5,9 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- which-key
+  use "folke/which-key.nvim"
+
   -- Colorscheme
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'folke/tokyonight.nvim'
@@ -101,5 +104,8 @@ return require('packer').startup(function(use)
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
   })
+
+  -- Functions signatures as we type
+  use "ray-x/lsp_signature.nvim"
 
 end)

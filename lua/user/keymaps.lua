@@ -52,3 +52,5 @@ keymap("x", "<A-Up>", ":move '<-2<CR>gv-gv", opts)
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- Telescope commands
+keymap("n", "<leader>fc", ":Telescope commands<cr>", opts)
