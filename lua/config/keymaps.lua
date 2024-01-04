@@ -11,3 +11,10 @@ keymap("n", "<S-Left>", ":bprevious<CR>", opts)
 
 -- Some telescope stuffs
 keymap("n", "<leader>p", ":Telescope commands<CR>", opts)
+
+-- Get out of insert mode if typing jk ir kj fast enough
+keymap("i", "kj", "<esc>", opts)
+keymap("i", "jk", "<esc>", opts)
+
+-- Close tab
+keymap("n", "<C-w>", ":bd<CR>", opts)
