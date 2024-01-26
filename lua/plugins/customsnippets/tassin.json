@@ -1,0 +1,31 @@
+{
+  "Tassin refto": {
+    "prefix": "<refto",
+    "body": [
+      "<refto group=\"figure\" id=\"$1\" />"
+    ],
+    "description": "Tassin's refto"
+  },
+  "Tassin figure": {
+    "prefix": "<figure",
+    "body": [
+      "<figure id=\"$1\" src=\"images/$2\" alt=\"$3\" width=\"100%\">"
+    ],
+    "description": "Tassin's figures"
+  },
+  "newpage": {
+    "prefix": "<newpage",
+    "body": "<newpage />\n",
+    "description": "newpage tassin"
+  },
+  "colorbloc": {
+    "prefix": "<colorbloc",
+    "body": "<colorbloc type=\"$1\">\n$2\n</colorbloc>",
+    "description": "colorbloc tassin"
+  },
+  "service": {
+    "prefix": "<service",
+    "body": "<service location=\"$1\">$2</service>",
+    "description": "service tassin"
+  }
+}
